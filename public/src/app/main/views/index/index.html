@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" data-ng-app="main">
+<head>
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title set in pageTitle directive -->
+    <title data-dce-page-title></title>
+    <meta name="description" data-dce-page-meta />
+    <meta name="keywords" data-dce-page-meta />
+
+    <!-- Bootstrap -->
+    <link href="external/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link href="external/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="static/scss/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Content -->
+    <div data-ui-view="content"></div>
+
+    <!-- Config -->
+    <script type="text/javascript" src="config/config_local.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="external/jquery/dist/jquery.min.js"></script>
+
+    <!-- Lodash -->
+    <script type="text/javascript" src="external/lodash/dist/lodash.min.js"></script>
+
+    <!-- Moment -->
+    <script type="text/javascript" src="external/moment/min/moment.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="external/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular -->
+    <script type="text/javascript" src="external/angular/angular.min.js"></script>
+    <script type="text/javascript" src="external/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="external/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- Application -->
+    <script type="text/javascript" src="app/dce.min.js"></script>
+</body>
+</html>

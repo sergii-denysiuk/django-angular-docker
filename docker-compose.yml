@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile-python
+    tty: true
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./backend/api/media/:/srv/api/media/
+      - ./backend/api/static-collect/:/srv/api/static-collect/
+  public:
+    build:
+      context: public
+      dockerfile: Dockerfile
+    tty: true
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+    depends_on:
+      - backend

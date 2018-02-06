@@ -99,3 +99,14 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Django
+backend/**/settings_local.py
+backend/**/media/
+backend/**/static-collect/
+
+# Angular
+public/**/config_local.js
+public/**/node_modules
+public/**/bower_components
+public/**/build
