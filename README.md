@@ -1,4 +1,5 @@
-# django-channels-example
+django-angular-docker
+=====================
 
 
 ### Docker manual
